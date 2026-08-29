@@ -40,7 +40,9 @@ Column names and order match the raw CSVs exactly (including misspelling: lenght
 `load_data.sh` uses `\copy` without a column list, which matches by position, so **please do not reorder columns**.
 
 `customers.customer_unique_id` is the **real_person**.
+
 `customer_id` is **order-scoped**.
+
 Repeat customers have multiple IDs. Use `customer_unique_id` for any cohort or repeat purchase analysis.
 
 `order_reviews` has **no primary key** on purpose, the raw CSV contains duplicate `(review_id, order_id)` rows. Indexed on `order_id` instead.
@@ -55,5 +57,4 @@ scripts/download_data.py  Kaggle fetch
 scripts/load_data.sh    CSV load
 data/raw/               CSVs (gitignored)
 dashboard/              Power BI .pbix (not yet built)
-docs/superpowers/       design spec + implementation plan
 ```
