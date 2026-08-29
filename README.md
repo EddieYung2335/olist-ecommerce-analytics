@@ -21,25 +21,17 @@ creadb olist && psql olist -f sql/schema.sql
 ### Data
 
 Raw CSVs aren't committed as `data/` is gitignored. Row counts after a clean load:
-┌──────────────────────────────┬─────────┐
-│            table             │  rows   │
-├──────────────────────────────┼─────────┤
-│ customers                    │ 99,441  │
-├──────────────────────────────┼─────────┤
-│ orders                       │ 99,441  │
-├──────────────────────────────┼─────────┤
-│ order_items                  │ 112,650 │
-├──────────────────────────────┼─────────┤
-│ order_payments               │ 103,886 │
-├──────────────────────────────┼─────────┤
-│ order_reviews                │ 99,224  │
-├──────────────────────────────┼─────────┤
-│ products                     │ 32,951  │
-├──────────────────────────────┼─────────┤
-│ sellers                      │ 3,095   │
-├──────────────────────────────┼─────────┤
-│ product_category_translation │ 71      │
-└──────────────────────────────┴─────────┘
+
+| table | rows |
+|---|---|
+| customers | 99,441 |
+| orders | 99,441 |
+| order_items | 112,650 |
+| order_payments | 103,886 |
+| order_reviews | 99,224 |
+| products | 32,951 |
+| sellers | 3,095 |
+| product_category_translation | 71 |
 
 ### Schema Notes
 
