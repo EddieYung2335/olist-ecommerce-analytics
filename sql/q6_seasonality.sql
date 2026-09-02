@@ -3,7 +3,7 @@
 WITH monthly_orders AS (
   SELECT 
     DATE_TRUNC('month', orders.order_purchase_timestamp) as month,
-    COUNT( orders.order_id) as total_orders,
+    COUNT(DISTINCT orders.order_id) as total_orders,
     SUM(order_items.price) as revenue
   FROM
     orders
