@@ -2,6 +2,10 @@
 
 A PostgreSQL + dashboard project on ~100K real Brazilian e-commerce orders (2016-2018). Six SQL queries turn raw transactions into stakeholder recommendations, backed by a live dashboard.
 
+<D-v>
+
+<D-v>
+
 **[Open the live dashboard →](https://datastudio.google.com/s/mLeRatBbWHE)**
 
 ## What's here
