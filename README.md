@@ -4,6 +4,8 @@ A PostgreSQL + dashboard project on ~100K real Brazilian e-commerce orders (2016
 
 [![Dashboard screenshot](images/dashboard-overview.png)](https://datastudio.google.com/s/mLeRatBbWHE)
 
+![Deep dive analysis](images/dashboard_page2.png)
+
 ## What's here
 
 `sql/` holds six standalone queries, one per business question, each readable top to bottom with no shared views. The dashboard connects live to a Neon-hosted Postgres instance, so it's not a static export or a CSV snapshot. [`findings.md`](findings.md) takes each query's result and spells out a recommendation in plain language.
